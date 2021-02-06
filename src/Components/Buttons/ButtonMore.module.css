@@ -1,0 +1,12 @@
+.ButtonMore{
+    width: 55px;
+    height: 30px;
+    border: none;
+    background-color: #e8663c;
+    color: #fff;
+}
+
+.ButtonMore:active, .ButtonMore:enabled,
+.ButtonMore:focus, .ButtonMore:hover, .ButtonMore:checked{
+    border: none;
+}

@@ -1,0 +1,52 @@
+.MessageForm{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.form_control, .form_control:active, .form_control:focus{
+    width: 220px;
+    height: 40px;
+    border: 2px solid #e8663c;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+    outline: none !important;
+    color: #e8663c;
+}
+
+.form_control::placeholder{
+    color: #e8663c;
+    text-transform: uppercase;
+}
+
+.messageInput {
+    border: 2px solid #e8663c;
+    width: 100%;
+    height: 210px;
+    text-align: left;
+    padding: 15px 0 0 10px;
+    margin-bottom: 15px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #e8663c;
+    outline: none !important;
+}
+
+.messageInput::placeholder{
+    color: #e8663c;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e8663c;
+    border: none;
+    outline: none !important;
+    text-transform: uppercase;
+}

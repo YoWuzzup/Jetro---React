@@ -1,0 +1,29 @@
+.portfolioItemSingle{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 50px;
+}
+
+.portfolioItem{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.PortfolioItem_img{
+    width: 100%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.PortfolioItem_para{
+    width: 100%;
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+    line-height: 1.5;
+    text-align: left;
+}
+  

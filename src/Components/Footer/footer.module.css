@@ -1,0 +1,59 @@
+.Footer{
+    width: 100%;
+    font-size: 12px;
+}
+
+.FooterWrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: #e8663c;
+    color: #fff;
+    height: 100%;
+}
+
+.FooterColumn{
+    flex-basis: 290px;
+    margin: 40px 5px 35px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.FooterAbout_Header, .FooterWidget_Header, .FooterContactUs_Header{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+
+.FooterAbout_FirstPara{
+    margin-bottom: 20px;
+}
+
+.FooterWidget_post{
+    margin-bottom: 20px;
+}
+
+.FooterContactUs_Para{
+    margin-bottom: 20px;
+}
+
+.FooterContactUs_Email{
+
+}
+
+.FooterContactUs_Phone{
+
+}
+
+.FooterContactUs_Links{
+    margin-top: 20px;
+}
+
+.FooterContactUs_Link{
+    margin: 20px 5px 0 0;
+}

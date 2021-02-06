@@ -1,0 +1,64 @@
+.PortfolioContent{
+
+}
+
+.PortfolioContent_sortButtons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.PortfolioContent_works{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.portfolioItems{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.sortButtons{
+    font-size: 14px;
+    font-family: "Bebas";
+    color: rgb(185, 185, 185);
+    line-height: 1.714;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.active{
+    color: #fff;
+    background-color: #e8663c;
+    padding: 10px;
+}
+
+@media(max-width: 1024px){
+    .PortfolioContent_sortButtons{
+        justify-content: center;
+    }
+    
+    .PortfolioContent_works{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 750px){
+    .PortfolioContent_works{
+        justify-content: space-around;
+    }
+
+    .PortfolioContent_sortButtons{
+        flex-wrap: wrap;    
+        width: 90%;
+        margin: 0 auto;
+    }
+}

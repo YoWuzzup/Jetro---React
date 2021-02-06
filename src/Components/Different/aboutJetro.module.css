@@ -1,0 +1,62 @@
+.AboutContent_sideContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.aboutJetro_title{
+    width: 100%;
+    color: #e8603c;
+    margin-bottom: 20px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.aboutJetro_name{
+    flex-basis: 50%;
+}
+
+.aboutJetro_titlePicture{
+    background-color: black;
+    height: 15px;
+    flex-basis: 80%;
+}
+
+.aboutJetro_para{
+    text-transform: none;
+}
+
+@media (max-width: 1024px){
+    .aboutJetro_titlePicture{
+        flex-basis: 100%;
+    }
+
+    .aboutJetro_name{
+        flex-basis: 25%;
+    }
+}
+
+@media (max-width: 700px){
+    .aboutJetro_titlePicture{
+        flex-basis: 75%;
+    }
+}
+
+@media (max-width: 400px){
+    .aboutJetro_titlePicture{
+        display: none;
+    }
+
+    .aboutJetro_name{
+        flex-basis: 50%;
+        text-align: center;
+    }
+}

@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import axios from "axios";
+import { useDispatch } from 'react-redux';
+
+import "./index.css";
+
+import { Home, AboutUs, Blog, Portfolio, ContactUs } from "./Pages";
+import { Header, Footer } from "./Components";
+import { Route, Switch } from "react-router-dom";
+import { setItems } from "./Redux/actions/items";
 
 function App() {
+  const dispatch = useDispatch();
+
+  const [headerNames] = React.useState({aboutUsName: ['About', 'us'], blogName: 'Blog', 
+                                        portfolioName: 'Portfolio', contactUsName: ['Contact', 'Us']});
+  
+  React.useEffect(()=> {
+    const fetchItems = async ()=> {
+      axios.get('http://localhost:3000/db.json').then(({data})=>{
+        dispatch(setItems(data.BlogItems));
+      });
+    }
+
+    fetchItems();
+  },);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    <Switch>
+      <Route path='/' component={Home}  exact />
+      <Route path='/aboutus' render={()=> <AboutUs headerName={headerNames.aboutUsName} />} exact />
+
+      <Route path='/blog' render={()=> <Blog headerName={headerNames.blogName}
+        />} exact />
+
+      <Route path='/portfolio' render={()=> <Portfolio headerName={headerNames.portfolioName} />} />
+      
+      <Route path='/contactus' render={()=> <ContactUs headerName={headerNames.contactUsName} />} exact />
+    </Switch>
+    <Footer />
+    </>
   );
 }
 

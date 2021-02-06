@@ -1,0 +1,47 @@
+.BlogContent{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.loadingHeader{
+    width: 68%;
+    padding-left: 20px;
+    margin: 0 auto 50px;
+    color: #e8603c;
+}
+
+.BlogContentWrapper{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+}
+
+.BlogContent_mainContent{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.BlogContent_sideContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-basis: 20%;
+}
+
+@media (max-width: 1024px){
+    .BlogContentWrapper{
+        flex-direction: column;
+    }
+    
+    .BlogContent_sideContent{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .loadingHeader{
+        width: 100%;
+    }
+}

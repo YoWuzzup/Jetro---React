@@ -1,0 +1,58 @@
+.ContactContent{
+    margin: 0 auto 40px;
+    width: 68%;
+    min-height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.ContactContent_mainContent{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.ContactContent_sideContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-basis: 20%;
+}
+
+.ContactContent_infoBlock{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.ContactContent_ourInfo{
+    flex-basis: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    font-size: 12pt;
+}
+
+.ContactContent_ourInfoPara{
+    margin-bottom: 15px;
+}
+
+.ContactContent_ourInfoAddress{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 15px;
+}
+
+.ContactContent_ourInfoNumbers{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 15px;
+}
+
+.ContactContent_yourInfoForm{
+    flex-basis: 60%;
+    
+}
